@@ -14,6 +14,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AltTechLabs LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
   <style>
     /* RESET CSS */
     *, *::before, *::after {
@@ -30,6 +33,7 @@
     body {
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
+      background-color: black;
     }
     img, picture, video, canvas, svg {
       display: block;
@@ -50,14 +54,23 @@
     #root, #__next {
       isolation: isolate;
     }
+    .poetsen-one-regular {
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
     .container {
       max-width: 650px;
       background-color: #fff;
       color: #fefefe;
       margin: auto;
       text-align: center;
+      background-color: black;
     }
-    p {
+    .logo {
+      margin: 40px auto;
+    }
+    .punk {
       color: #d92662;
     }
     h3 {
@@ -66,15 +79,19 @@
     h1 {  
       color: #1d59d0;
     }
+    .mtop25 {
+        margin-top: 25px;
+    }
   </style>
 </head>
 
 <body>
   <main class="container">
-    <h1>AltTechLabs LLC</h1>
+    <h1 class="mtop25 poetsen-one-regular">AltTechLabs LLC</h1>
     <h3>{Alternative Technology Labs}</h3>
-    <img src="/images/atl-500.png">
-    <p>/\.*/ { print "punk rock web development \n"; }</p>
+    <p class="punk">/\.*/ { print "punk rock web development \n"; }</p>
+    <img class="logo" src="/images/atl-500.png">
+    <p>Contact Us: <a href="mailto:hello@alttechlabs.com">hello@alttechlabs.com</a></p>
     <small>&copy; Copyright 2025, AltTechLabs LLC</small>
   </main>
 </body>
